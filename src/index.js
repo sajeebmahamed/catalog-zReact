@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './app/App';
+// assets
+import './assets/css/bootstrap.min.css';
+import './assets/css/templatemo-style.css';
+import './assets/fontawesome/css/all.min.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
