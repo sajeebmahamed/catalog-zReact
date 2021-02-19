@@ -5,6 +5,7 @@ import ContactPage from '../pages/contact';
 import DetailsPage from '../pages/details';
 import VideoDetails from '../pages/details/videodetails';
 import HomePage from '../pages/home';
+import NotFound from '../pages/NotFound';
 import VideoPage from '../pages/video';
 
 const AppRouter = () => (
@@ -16,6 +17,7 @@ const AppRouter = () => (
         <VideoDetails path="videos/video/:id" />
         <AboutPage path="/about" />
         <ContactPage path="/contact" />
+        <NotFound default />
     </Router>
 );
 
