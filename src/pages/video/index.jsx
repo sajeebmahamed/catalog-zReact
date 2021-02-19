@@ -37,7 +37,7 @@ function VideoPage() {
                 <TopPagination text="Latest Videos" />
                 <div className="row tm-mb-90 tm-gallery">
                     {data.map((d) => (
-                        <CardFrame info={d} />
+                        <CardFrame key={d.id} info={d} extraForVideo />
                     ))}
                 </div>
                 <div className="row tm-mb-90">

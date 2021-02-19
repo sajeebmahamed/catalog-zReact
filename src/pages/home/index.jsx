@@ -27,7 +27,7 @@ function HomePage() {
                 <TopPagination text="Latest Photos" />
                 <div className="row tm-mb-90 tm-gallery">
                     {data.map((d) => (
-                        <CardFrame key={d.img} info={d} />
+                        <CardFrame key={d.id} info={d} />
                     ))}
                 </div>
                 <div className="row tm-mb-90">

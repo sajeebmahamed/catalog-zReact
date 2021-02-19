@@ -70,7 +70,8 @@ const demo = [
 //     'peache',
 // ];
 const mainData = [
-    demo.map((img) => ({
+    demo.map((img, i) => ({
+        id: i + 1,
         title: 'Clocks',
         date: randomDate(new Date(2019, 0, 1), new Date()),
         views: getRandomNumberBetween(1000, 5000),
