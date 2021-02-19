@@ -1,12 +1,13 @@
+import { Link } from '@reach/router';
 import React from 'react';
 
 const NavBar = () => (
     <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-            <a className="navbar-brand" href>
+            <Link to="/" className="navbar-brand">
                 <i className="fas fa-film mr-2" />
                 Catalog-Z
-            </a>
+            </Link>
             <button
                 className="navbar-toggler"
                 type="button"
@@ -21,28 +22,24 @@ const NavBar = () => (
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <a
-                            className="nav-link nav-link-1 active"
-                            aria-current="page"
-                            href="index.html"
-                        >
+                        <Link to="/" className="nav-link nav-link-1 active" aria-current="page">
                             Photos
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link nav-link-2" href="videos.html">
+                        <Link to="/videos" className="nav-link nav-link-2">
                             Videos
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link nav-link-3" href="about.html">
+                        <Link to="/about" className="nav-link nav-link-3">
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link nav-link-4" href="contact.html">
+                        <Link to="/contact" className="nav-link nav-link-4">
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

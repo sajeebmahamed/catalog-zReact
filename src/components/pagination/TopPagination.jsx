@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TopPagination = () => (
+const TopPagination = ({ text }) => (
     <div className="row mb-4">
-        <h2 className="col-6 tm-text-primary">Latest Photos</h2>
+        <h2 className="col-6 tm-text-primary"> {text} </h2>
         <div className="col-6 d-flex justify-content-end align-items-center">
             <form action="" className="tm-text-primary">
                 Page{' '}
